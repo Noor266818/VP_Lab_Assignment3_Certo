@@ -79,7 +79,7 @@
 
 
 .hero-right {
-    flex: 1.2; /* Area barha diya taake image screen edge tak phail jaye */
+    flex: 1.2; 
     display: flex;
     justify-content: flex-end; /* Image ko browser ke kone tak le jane ke liye */
 }
