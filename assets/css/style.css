@@ -195,7 +195,7 @@ html, body {
     background: #FFFFFF;
     border-radius: 30px;
     padding: 30px 25px;
-    width: 320px; /* Chota size taake 5 cards row mein aa skein */
+    width: 320px;
     min-width: 320px;
     height: 340px;
     display: flex;
