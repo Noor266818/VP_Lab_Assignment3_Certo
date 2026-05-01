@@ -77,7 +77,7 @@
     display: block;
 }
 
-/* --- Right Side: Orange Hero BG & Mobile --- */
+
 .hero-right {
     flex: 1.2; /* Area barha diya taake image screen edge tak phail jaye */
     display: flex;
