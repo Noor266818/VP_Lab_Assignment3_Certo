@@ -204,7 +204,7 @@ html, body {
     transition: opacity 0.3s ease;
 }
 
-/* Faded effect for 1st and 5th card */
+
 .testimonial-card.opacity-50 {
     opacity: 0.4 !important; /* Zyada faded jaisa image mein hai */
 }
