@@ -143,7 +143,7 @@ html, body {
     top: 0;
     width: 100%;
     z-index: 999;
-    padding: 30px 60px !important; /* Spacing like Pic 2 */
+    padding: 30px 60px !important; 
 }
 
 .navbar-brand img {
