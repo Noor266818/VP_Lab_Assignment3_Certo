@@ -206,7 +206,7 @@ html, body {
 
 
 .testimonial-card.opacity-50 {
-    opacity: 0.4 !important; /* Zyada faded jaisa image mein hai */
+    opacity: 0.4 !important; 
 }
 
 .stars {
