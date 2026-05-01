@@ -180,8 +180,7 @@ html, body {
 .testimonial-wrapper {
     width: 100%;
     display: flex;
-    justify-content: center; /* Saaray cards ko darmiyan mein lane ke liye */
-    padding: 20px 0;
+    justify-content: center; 
 }
 
 .testimonial-inner {
