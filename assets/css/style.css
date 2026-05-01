@@ -136,8 +136,6 @@ html, body {
     font-family: 'DM Sans', sans-serif;
     background-color: #ffffff;
 }
-
-/* Nav Bar Fix — As per certosoftware.com.jpg */
 /* --- NAVBAR: Transparent & Fixed on Top --- */
 .navbar {
     background-color: transparent !important;
