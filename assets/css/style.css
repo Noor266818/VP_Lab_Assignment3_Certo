@@ -345,7 +345,7 @@ html, body {
 /* Mobile Compatibility */
 @media (max-width: 768px) {
     .story-img {
-        max-width: 95%;     /* Mobile par thora bada dikhega */
+        max-width: 95%;     
     }
     .story-help-section {
         padding: 30px 0 !important;
@@ -353,7 +353,7 @@ html, body {
 }
 
 /* ============================================
-   RESPONSIVE (Updated)
+   RESPONSIVE 
    ============================================ */
 @media (max-width: 1024px) {
     .testimonial-inner {
@@ -371,7 +371,7 @@ html, body {
 
 
 .spy-banner-section {
-    background-color: #4335de; /* Image ka blue background color yahan dein taake edges match karein */
+    background-color: #4335de; 
     padding: 60px 0;
     display: flex;
     justify-content: center;
@@ -380,7 +380,7 @@ html, body {
 
 .banner-img {
     width: 100%;
-    max-width: 60%; /* Laptop screen ke mutabiq size */
+    max-width: 60%; 
     height: auto;
     display: block;
     margin: 0 auto;
