@@ -100,7 +100,7 @@
 
 .hero-mobile {
     position: absolute;
-    bottom: 10px; /* Mobile ko orange image ke bottom ke kareeb karne ke liye */
+    bottom: 10px; 
     left: 15%;    /* Mobile ki horizontal position adjust karein */
     width: 45%;   /* Background ke hisab se mobile ka size */
     z-index: 10;
