@@ -101,7 +101,7 @@
 .hero-mobile {
     position: absolute;
     bottom: 10px; 
-    left: 15%;    /* Mobile ki horizontal position adjust karein */
+    left: 15%;    
     width: 45%;   /* Background ke hisab se mobile ka size */
     z-index: 10;
     filter: drop-shadow(0 15px 30px rgba(0,0,0,0.2));
