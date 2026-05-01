@@ -46,7 +46,7 @@
 .hero-section {
     width: 100%;
     padding-top: 60px;
-    padding-bottom: 0 !important; /* Neechay se section ko jhorne ke liye */
+    padding-bottom: 0 !important; 
     background: linear-gradient(to right, #ffffff 50%, #f4f7ff 50%);
     overflow: hidden; /* Taake koi horizontal scroll na aaye */
     display: flex;
