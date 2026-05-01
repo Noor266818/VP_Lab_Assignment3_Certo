@@ -257,7 +257,7 @@ html, body {
     text-align: left;
 }
 
-/* Responsive fix for Probook */
+/* Responsive  */
 @media (max-width: 1366px) {
     .logo-img {
         height: 65px; 
