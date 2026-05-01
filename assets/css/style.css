@@ -55,7 +55,7 @@
 
 .hero-container {
     display: flex;
-    align-items: flex-end; /* Text aur Image dono ko bottom line se jhorne ke liye */
+    align-items: flex-end; 
     width: 100% !important;
     max-width: 100% !important; /* Full width taake image edge tak jaye */
     padding-left: 8% !important; /* Text ko mazeed right shift karne ke liye */
