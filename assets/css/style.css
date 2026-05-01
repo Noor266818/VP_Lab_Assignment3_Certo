@@ -260,7 +260,7 @@ html, body {
 /* Responsive fix for Probook */
 @media (max-width: 1366px) {
     .logo-img {
-        height: 65px; /* Laptop screen par overlap se bachne ke liye thora balance size */
+        height: 65px; 
     }
     .featured-row {
         gap: 30px;
