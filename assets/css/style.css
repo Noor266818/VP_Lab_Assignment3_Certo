@@ -240,7 +240,7 @@ html, body {
 }
 
 .logo-img {
-    height: 70px; /* Logos ko bara kiya */
+    height: 70px; 
     width: auto;
     filter: brightness(0) saturate(100%) invert(8%) sepia(59%) 
             saturate(4565%) hue-rotate(233deg) brightness(91%) contrast(109%);
