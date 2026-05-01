@@ -277,12 +277,12 @@ html, body {
 
 .features-section {
     background-color: #F3F7FF;
-    /* Vertical padding ko mazeed kam kiya taake scroll na karna pare */
+   
     padding: 100px 0 !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Laptop screen par fit karne ke liye */
+    
     min-height: auto; 
 }
 
@@ -291,15 +291,15 @@ html, body {
     color: #02033B;
     font-weight: 800;
     margin-top: -20px !important;
-    /* Size thora kam kiya taake heading kam jagah le */
+    
     font-size: 2rem !important; 
     margin-bottom: 50px !important;
     
 }
 
-/* Image alignment and scaling */
+
 .features-img {
-    /* Height ko screen ki total height ka 65% rakha */
+   
     max-height: 100vh !important; 
     width: auto;
     max-width: 90%;
