@@ -87,15 +87,15 @@
 .hero-image-wrapper {
     position: relative;
     width: 100%;
-    line-height: 0; /* Image ke neechay ki extra space khatam karne ke liye */
+    line-height: 0; 
 }
 
 .hero-bg {
     width: 100%;
     height: auto;
     display: block;
-    margin-bottom: -1px; /* Neechay wale section se overlap ke liye */
-    border-left: 10px solid #4335de; /* Blue line edge par */
+    margin-bottom: -1px; 
+    border-left: 10px solid #4335de; 
 }
 
 .hero-mobile {
