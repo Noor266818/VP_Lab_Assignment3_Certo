@@ -237,27 +237,17 @@ html, body {
    SECTION 2: FEATURED LOGOS (Perfect Alignment)
    ============================================ */
 .featured-row {
-    background-color: #FFC247 !important;
-    padding: 40px 0;
-    width: 100%;
-}
-
-.logo-img {
-    height: 70px; /* Logos ko bara kiya */
-    width: auto;
-    filter: brightness(0) saturate(100%) invert(8%) sepia(59%) 
-            saturate(4565%) hue-rotate(233deg) brightness(91%) contrast(109%);
-    transition: transform 0.2s ease-in-out;
-}
-
-.logo-img:hover {
-    transform: scale(1.1); /* Interactive effect */
+    padding: 40px 8% !important; /* Hero section ke saath alignment match karne ke liye */
+    justify-content: space-between;
 }
 
 .featured-label {
-    font-size: 1.3rem;
-    color: #02033B;
-    text-align: left;
+    margin-right: auto; /* Ise extreme left par push karega */
+}
+
+.logo-img {
+    height: 80px; /* Thora bara size jaisa aap ne kaha */
+    margin-left: 20px; /* Logos ko thora thora right move karne ke liye */
 }
 
 /* Responsive fix for Probook */
