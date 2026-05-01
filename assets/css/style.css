@@ -187,7 +187,7 @@ html, body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 15px; /* Cards ke darmiyan thora kam gap */
+    gap: 15px; 
 }
 
 /* Card Size Reduced to fit 5 cards */
