@@ -216,7 +216,7 @@ html, body {
 }
 
 .review-text {
-    font-size: 0.95rem; /* Text thora chota for smaller cards */
+    font-size: 0.95rem; 
     color: #02033B;
     line-height: 1.5;
     flex-grow: 1;
