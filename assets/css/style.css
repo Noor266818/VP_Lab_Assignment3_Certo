@@ -11,7 +11,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding-left: 10%; /* Is se text aur image dono right move ho jayenge */
+    padding-left: 10%; 
     align-items: flex-end;
 }
 
