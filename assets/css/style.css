@@ -274,7 +274,9 @@ html, body {
     padding: 80px 0; 
     background: #fff;
 }
-
+/* ============================================
+   SECTIONS 4:Feature section
+   ============================================ */
 .features-section {
     background-color: #F3F7FF;
    
@@ -309,7 +311,7 @@ html, body {
     object-fit: contain; 
 }
 /* ============================================
-   SECTION 4: STORY & HELP 
+   SECTION 5: STORY & HELP 
    ============================================ */
 
 .story-help-section {
@@ -369,7 +371,7 @@ html, body {
     }
 }
 /* ============================================
-   STORY & HELP CENTER
+   Sectin 6
    ============================================ */
 
 .spy-banner-section {
@@ -396,7 +398,7 @@ html, body {
 }
 
 /* ============================================
-   LATEST INSIGHTS (Cards & Button Alignment)
+   section 7:LATEST INSIGHTS (Cards & Button Alignment)
    ============================================ */
 .insights-section {
     background-color: #F3F7FF; 
@@ -440,8 +442,9 @@ html, body {
         width: 90%;          
     }
 }
-/* --- Final Accurate Footer CSS --- */
-
+/* ============================================
+   SECTIONS 8: footer
+   ============================================ */
 .footer-section {
     background-color: #02033b; /* Dark navy blue from image */
     padding: 60px 0 30px 0;
@@ -464,13 +467,13 @@ html, body {
     flex-direction: column;
 }
 
-/* --- Left Column: Scan/Socials --- */
+
 .col-left {
     flex: 1;
 }
 
 .footer-img-main {
-    width: 280px; /* Adjust based on your image crop */
+    width: 280px; 
     height: auto;
     margin-bottom: 25px;
 }
@@ -482,7 +485,7 @@ html, body {
     opacity: 0.9;
 }
 
-/* --- Middle Column: Certo Links --- */
+
 .col-middle {
     flex: 0.8;
 }
@@ -505,12 +508,12 @@ html, body {
     height: auto;
 }
 
-/* --- Right Column: Newsletter & Overlap White Card --- */
+
 .col-right {
     flex: 1.2;
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Card and badges to the right */
+    align-items: flex-end; 
     position: relative;
 }
 
@@ -524,13 +527,11 @@ html, body {
     width: 240px;
     height: auto;
     display: block;
-    /* Yellow card ke niche overlap karne ke liye negative margin */
     margin-top: -40px; 
     margin-right: 20px;
     z-index: 2;
 }
 
-/* --- Bottom Legal Row (Apple Paragraph) --- */
 .footer-bottom-legal {
     max-width: 1100px;
     margin: 40px auto 0;
