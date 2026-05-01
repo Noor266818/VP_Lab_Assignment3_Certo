@@ -1,0 +1,581 @@
+/* --- Header/Navbar --- */
+.main-header {
+    width: 100%;
+    padding: 20px 0;
+    background: #fff;
+    border-bottom: 2px solid #ffc107; /* Yellow border jaisa screenshot mein hai */
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%; /* Is se text aur image dono right move ho jayenge */
+    align-items: flex-end;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #02033b;
+    font-weight: bold;
+}
+
+.sign-in-btn {
+    background: #4335de;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* --- Hero Section --- */
+/* --- Hero Section Main Styling --- */
+.hero-section {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 0 !important; /* Neechay se section ko jhorne ke liye */
+    background: linear-gradient(to right, #ffffff 50%, #f4f7ff 50%);
+    overflow: hidden; /* Taake koi horizontal scroll na aaye */
+    display: flex;
+    align-items: stretch;
+}
+
+.hero-container {
+    display: flex;
+    align-items: flex-end; /* Text aur Image dono ko bottom line se jhorne ke liye */
+    width: 100% !important;
+    max-width: 100% !important; /* Full width taake image edge tak jaye */
+    padding-left: 8% !important; /* Text ko mazeed right shift karne ke liye */
+    padding-right: 0 !important;   /* Right side ka gap bilkul khatam */
+    margin: 0;
+}
+
+/* --- Left Side: Text/Buttons Image --- */
+.hero-left {
+    flex: 1;
+    padding-bottom: 80px; /* Text ko orange background ke center ke barabar lane ke liye */
+    z-index: 2;
+}
+
+.hero-text-img {
+    max-width: 550px; /* Size adjust karein */
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- Right Side: Orange Hero BG & Mobile --- */
+.hero-right {
+    flex: 1.2; /* Area barha diya taake image screen edge tak phail jaye */
+    display: flex;
+    justify-content: flex-end; /* Image ko browser ke kone tak le jane ke liye */
+}
+
+.hero-image-wrapper {
+    position: relative;
+    width: 100%;
+    line-height: 0; /* Image ke neechay ki extra space khatam karne ke liye */
+}
+
+.hero-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: -1px; /* Neechay wale section se overlap ke liye */
+    border-left: 10px solid #4335de; /* Blue line edge par */
+}
+
+.hero-mobile {
+    position: absolute;
+    bottom: 10px; /* Mobile ko orange image ke bottom ke kareeb karne ke liye */
+    left: 15%;    /* Mobile ki horizontal position adjust karein */
+    width: 45%;   /* Background ke hisab se mobile ka size */
+    z-index: 10;
+    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.2));
+}
+
+/* --- Responsive Settings --- */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        padding-left: 20px !important;
+        align-items: center;
+    }
+    .hero-left {
+        padding-bottom: 40px;
+    }
+    .hero-mobile {
+        width: 180px;
+        left: 20%;
+    }
+}
+/* ============================================
+   GLOBAL & NAV BAR SETTINGS
+   ============================================ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #ffffff;
+}
+
+/* Nav Bar Fix — As per certosoftware.com.jpg */
+/* --- NAVBAR: Transparent & Fixed on Top --- */
+.navbar {
+    background-color: transparent !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 60px !important; /* Spacing like Pic 2 */
+}
+
+.navbar-brand img {
+    height: 40px; 
+}
+
+.nav-link {
+    color: #02033B !important;
+    font-weight: 800;
+    margin-right: 25px;
+}
+
+/* ============================================
+   SECTION 1: TESTIMONIALS (5 Cards in one row)
+   ============================================ */
+.testimonials-section {
+    background-color: #FFC247;
+    padding: 80px 0;
+    width: 100%;
+    overflow: hidden; /* Extra space bahar na nikalay */
+}
+
+/* Heading gap fix */
+.section-title {
+    color: #02033B;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.1;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+/* Wrapper to hold everything in one line */
+.testimonial-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Saaray cards ko darmiyan mein lane ke liye */
+    padding: 20px 0;
+}
+
+.testimonial-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px; /* Cards ke darmiyan thora kam gap */
+}
+
+/* Card Size Reduced to fit 5 cards */
+.testimonial-card {
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 30px 25px;
+    width: 320px; /* Chota size taake 5 cards row mein aa skein */
+    min-width: 320px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: opacity 0.3s ease;
+}
+
+/* Faded effect for 1st and 5th card */
+.testimonial-card.opacity-50 {
+    opacity: 0.4 !important; /* Zyada faded jaisa image mein hai */
+}
+
+.stars {
+    color: #FFC247;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.review-text {
+    font-size: 0.95rem; /* Text thora chota for smaller cards */
+    color: #02033B;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.author {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #02033B;
+    margin-top: 20px;
+}
+
+/* ============================================
+   SECTION 2: FEATURED LOGOS
+   ============================================ */
+/* ============================================
+   SECTION 2: FEATURED LOGOS (Perfect Alignment)
+   ============================================ */
+.featured-row {
+    background-color: #FFC247 !important;
+    display: flex;
+    align-items: center;
+    /* Is se Featured in extreme left aur logos right par chale jayenge */
+    justify-content: space-between; 
+    
+    /* Hero section ki alignment (8%) ke saath match karne ke liye */
+    padding: 40px 8% 60px 8%; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.featured-label {
+    font-size: 1.4rem; /* Text thora bara kiya */
+    font-weight: 800;
+    color: #02033B;
+    /* Is se text mazeed left ki taraf push hoga */
+    margin-right: auto; 
+    white-space: nowrap;
+}
+
+/* Logos ka group jo right side par move hoga */
+.logos-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px; /* Logos ke darmiyan gap barhaya taake wo right spread hon */
+    flex: 1;
+}
+
+.logo-img {
+    height: 85px; /* Logo ka size bara kar diya */
+    width: auto;
+    filter: brightness(0) saturate(100%) invert(8%) sepia(59%) 
+            saturate(4565%) hue-rotate(233deg) brightness(91%) contrast(109%);
+    /* Thora right move karne ke liye padding-left */
+    padding-right: 10px; 
+}
+
+/* Responsive fix for Probook */
+@media (max-width: 1366px) {
+    .logo-img {
+        height: 65px; /* Laptop screen par overlap se bachne ke liye thora balance size */
+    }
+    .featured-row {
+        gap: 30px;
+    }
+}
+
+/* ============================================
+   SECTIONS 3, 4, 5 — (Updated for Laptop Fit)
+   ============================================ */
+.at-certo-section, .story-help-section {
+    padding: 80px 0; /* Padding thori kam ki */
+    background: #fff;
+}
+
+.features-section {
+    background-color: #F3F7FF;
+    /* Vertical padding ko mazeed kam kiya taake scroll na karna pare */
+    padding: 100px 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Laptop screen par fit karne ke liye */
+    min-height: auto; 
+}
+
+.section-heading {
+    text-align: center;
+    color: #02033B;
+    font-weight: 800;
+    margin-top: -20px !important;
+    /* Size thora kam kiya taake heading kam jagah le */
+    font-size: 2rem !important; 
+    margin-bottom: 50px !important;
+    
+}
+
+/* Image alignment and scaling */
+.features-img {
+    /* Height ko screen ki total height ka 65% rakha */
+    max-height: 100vh !important; 
+    width: auto;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+    /* Image ko bina stretch kiye fit karne ke liye */
+    object-fit: contain; 
+}
+/* ============================================
+   SECTION 5: STORY & HELP (Image Centering)
+   ============================================ */
+
+.story-help-section {
+    background-color: #ffffff;
+    padding: 60px 0 !important; /* Oopar neeche spacing */
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;    /* Vertically center */
+    width: 100%;
+}
+
+.story-help-section .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.story-image-wrapper {
+    text-align: center;
+    width: 100%;
+}
+
+.story-img {
+    /* Laptop screen par fit karne ke liye width aur height control */
+    max-width: 85%;         /* Screen ki width se thora chota rakha */
+    height: auto;           /* Aspect ratio barkarar rahega */
+    max-height: 80vh;       /* Screen ki height se bahar nahi jayegi */
+    display: block;
+    margin: 0 auto;         /* Center alignment */
+    object-fit: contain;
+}
+
+/* Mobile Compatibility */
+@media (max-width: 768px) {
+    .story-img {
+        max-width: 95%;     /* Mobile par thora bada dikhega */
+    }
+    .story-help-section {
+        padding: 30px 0 !important;
+    }
+}
+
+/* ============================================
+   RESPONSIVE (Updated)
+   ============================================ */
+@media (max-width: 1024px) {
+    .testimonial-inner {
+        padding-left: 20px;
+    }
+    .testimonial-card {
+        width: 320px;
+        min-width: 320px;
+    }
+    /* Laptop/Tablet par heading mazeed choti */
+    .section-heading {
+        font-size: 1.8rem !important;
+    }
+}
+
+
+.spy-banner-section {
+    background-color: #4335de; /* Image ka blue background color yahan dein taake edges match karein */
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.banner-img {
+    width: 100%;
+    max-width: 60%; /* Laptop screen ke mutabiq size */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .banner-img {
+        max-width: 95%;
+    }
+}
+
+/* ============================================
+   LATEST INSIGHTS (Cards & Button Alignment)
+   ============================================ */
+.insights-section {
+    background-color: #F3F7FF; 
+    padding: 80px 0;
+    width: 100%;
+}
+
+/* 1. Cards ka size thora chota karne ke liye */
+.insight-img {
+    width: 28% !important; /* Width thori aur kam ki */
+    max-height: 450px;     /* Height ko restrict kiya */
+    object-fit: contain;
+}
+
+/* 2. Section ki padding kam karein */
+
+/* 1. Poore section (Heading samait) ko neechay karne ke liye */
+.insights-section {
+    padding-top: 100px !important; /* Is se "Latest insights" heading mazeed neechay aa jayegi */
+    padding-bottom: 80px;
+    background-color: #F3F7FF;
+}
+
+/* 2. Button ko cards se mazeed neechay karne ke liye */
+.insights-wrapper {
+    margin-bottom: 80px !important; /* Cards ke neechay gap barha diya taake button neechay chala jaye */
+    
+    /* Purani properties */
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 60px;
+}
+
+/* 3. Button ka container alignment */
+.view-all-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+/* Mobile View */
+@media (max-width: 768px) {
+    .insights-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .insight-img {
+        width: 90%;          /* Mobile par image bari dikhayi degi */
+    }
+}
+/* --- Final Accurate Footer CSS --- */
+
+.footer-section {
+    background-color: #02033b; /* Dark navy blue from image */
+    padding: 60px 0 30px 0;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 40px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Left Column: Scan/Socials --- */
+.col-left {
+    flex: 1;
+}
+
+.footer-img-main {
+    width: 280px; /* Adjust based on your image crop */
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.footer-img-copy {
+    width: 250px;
+    height: auto;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* --- Middle Column: Certo Links --- */
+.col-middle {
+    flex: 0.8;
+}
+
+.footer-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+
+.nav-divider {
+    width: 150px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 25px;
+}
+
+.footer-img-nav {
+    width: 130px;
+    height: auto;
+}
+
+/* --- Right Column: Newsletter & Overlap White Card --- */
+.col-right {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Card and badges to the right */
+    position: relative;
+}
+
+.footer-img-news {
+    width: 400px;
+    height: auto;
+    display: block;
+}
+
+.footer-img-badge {
+    width: 240px;
+    height: auto;
+    display: block;
+    /* Yellow card ke niche overlap karne ke liye negative margin */
+    margin-top: -40px; 
+    margin-right: 20px;
+    z-index: 2;
+}
+
+/* --- Bottom Legal Row (Apple Paragraph) --- */
+.footer-bottom-legal {
+    max-width: 1100px;
+    margin: 40px auto 0;
+    padding: 0 40px;
+}
+
+.footer-bottom-legal img {
+    width: 450px;
+    height: auto;
+    opacity: 0.7;
+    display: block;
+}
+
+/* --- Responsive for Laptop/Tablet --- */
+@media (max-width: 1024px) {
+    .footer-container {
+        padding: 0 20px;
+    }
+    .footer-img-news {
+        width: 350px;
+    }
+}
