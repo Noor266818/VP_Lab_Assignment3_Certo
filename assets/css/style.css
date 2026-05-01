@@ -305,19 +305,19 @@ html, body {
     max-width: 90%;
     display: block;
     margin: 0 auto;
-    /* Image ko bina stretch kiye fit karne ke liye */
+    
     object-fit: contain; 
 }
 /* ============================================
-   SECTION 5: STORY & HELP (Image Centering)
+   SECTION 4: STORY & HELP 
    ============================================ */
 
 .story-help-section {
     background-color: #ffffff;
-    padding: 60px 0 !important; /* Oopar neeche spacing */
+    padding: 60px 0 !important; 
     display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center;    /* Vertically center */
+    justify-content: center; 
+    align-items: center;    
     width: 100%;
 }
 
@@ -333,12 +333,12 @@ html, body {
 }
 
 .story-img {
-    /* Laptop screen par fit karne ke liye width aur height control */
-    max-width: 85%;         /* Screen ki width se thora chota rakha */
-    height: auto;           /* Aspect ratio barkarar rahega */
-    max-height: 80vh;       /* Screen ki height se bahar nahi jayegi */
+   
+    max-width: 85%;         
+    height: auto;           
+    max-height: 80vh;       
     display: block;
-    margin: 0 auto;         /* Center alignment */
+    margin: 0 auto;        
     object-fit: contain;
 }
 
